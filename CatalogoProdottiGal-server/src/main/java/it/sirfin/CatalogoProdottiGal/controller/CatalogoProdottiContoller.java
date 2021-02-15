@@ -23,7 +23,7 @@ public class CatalogoProdottiContoller {
     
     @Autowired
     CatalogoProdottiService catalogoService;
-    @RequestMapping("/leggi-rubrica")
+    @RequestMapping("/leggi-catalogo")
     @ResponseBody
     public CatalogoProdottiDto leggiCatalogo() {
         return new CatalogoProdottiDto(catalogoService.leggiCatalogo());

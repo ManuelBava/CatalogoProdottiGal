@@ -8,10 +8,7 @@ package it.sirfin.CatalogoProdottiGal.service;
 import it.sirfin.CatalogoProdottiGal.model.Prodotto;
 import java.util.List;
 
-/**
- *
- * @author manue
- */
+
 public interface CatalogoProdottiService {
     
     List<Prodotto> leggiCatalogo();
