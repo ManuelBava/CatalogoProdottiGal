@@ -5,10 +5,11 @@
  */
 package it.sirfin.CatalogoProdottiGal.repository;
 
-/**
- *
- * @author manue
- */
-public interface ProdottoRepository {
+import it.sirfin.CatalogoProdottiGal.model.Prodotto;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProdottoRepository extends JpaRepository<Prodotto, Long> {
     
 }
