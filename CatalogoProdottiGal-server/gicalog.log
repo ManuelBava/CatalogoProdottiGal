@@ -546,3 +546,44 @@ java.lang.IllegalArgumentException: Entity must not be null.
 2021-02-15 22:21:50.431 DEBUG 10384 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
 2021-02-15 22:25:25.217  WARN 10384 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public it.sirfin.CatalogoProdottiGal.dto.CatalogoProdottiDto it.sirfin.CatalogoProdottiGal.controller.CatalogoProdottiContoller.cancellaProdotto(it.sirfin.CatalogoProdottiGal.dto.RichiestaProdottoDto)]
 2021-02-15 22:25:42.004 DEBUG 10384 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
+2021-02-15 22:35:00.728 DEBUG 10384 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
+2021-02-15 22:35:01.157 DEBUG 10384 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
+2021-02-15 22:49:04.647  WARN 11984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-15 22:49:04.698  WARN 15384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-15 22:49:05.271  WARN 11648 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-15 22:49:05.886  WARN 15384 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-02-15 22:49:05.983 ERROR 15384 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-02-15 22:49:06.008  WARN 11648 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-02-15 22:49:06.043 ERROR 11648 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-02-15 22:49:40.702 DEBUG 11984 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
+2021-02-15 22:49:42.096 DEBUG 11984 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.id as id1_0_0_, prodotto0_.descrizione as descrizi2_0_0_, prodotto0_.prezzo as prezzo3_0_0_ from prodotto prodotto0_ where prodotto0_.id=?
+2021-02-15 22:49:42.099 TRACE 11984 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2021-02-15 22:49:42.203 DEBUG 11984 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : delete from prodotto where id=?
+2021-02-15 22:49:42.204 TRACE 11984 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [9]
+2021-02-15 22:49:42.282 DEBUG 11984 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select prodotto0_.id as id1_0_, prodotto0_.descrizione as descrizi2_0_, prodotto0_.prezzo as prezzo3_0_ from prodotto prodotto0_
