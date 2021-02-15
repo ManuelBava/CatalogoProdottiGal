@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "CatalogoProdottiGal-client"
+  "defaultProject": "CatalogoProdottiGal-client",
+  "cli": {
+    "analytics": false
+  }
 }
