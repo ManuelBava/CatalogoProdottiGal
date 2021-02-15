@@ -5,10 +5,7 @@
  */
 package it.sirfin.CatalogoProdottiGal.service.impl;
 
-/**
- *
- * @author manue
- */
+
 public class CatalogoProdottiServiceImpl {
     
 }
